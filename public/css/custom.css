@@ -1,0 +1,28 @@
+
+/* ----------------------------------------------------
+	You can put your custom css code here: 
+-------------------------------------------------------*/
+/****** Style Star Rating Widget *****/
+
+
+
+.star-widget input{
+	display: none;
+  }
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+.star-widget input:checked ~ label{
+  color: #fd4;
+}
+.star-widget input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
